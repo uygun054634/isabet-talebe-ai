@@ -17,10 +17,10 @@ client = OpenAI(api_key=GROK_API_KEY, base_url="https://api.x.ai/v1")
 # --- VERİTABANI SİMÜLASYONU ---
 if "users_db" not in st.session_state:
     st.session_state.users_db = [
-        {"fullname": "Ahmet Uygun",      "email": "ahmet@isabet.k12.tr",   "key": "talebetalebe", "role": "Yönetici"},
-        {"fullname": "Bestami Akça",     "email": "bestami@isabet.k12.tr", "key": "isabet1453",   "role": "Müdür"},
-        {"fullname": "Shatlyk Allabayew","email": "shasha@isabet.k12.tr",  "key": "shasha",       "role": "Öğretmen"},
-        {"fullname": "Mikail Akça",      "email": "mikail@isabet.k12.tr",  "key": "isabetyurt",   "role": "Mesul"},
+        {"fullname": "Ahmet Uygun",      "key": "talebetalebe", "role": "Yönetici"},
+        {"fullname": "Bestami Akça",     "key": "isabet1453",   "role": "Müdür"},
+        {"fullname": "Shatlyk Allabayew","key": "shasha",       "role": "Öğretmen"},
+        {"fullname": "Mikail Akça",      "key": "isabetyurt",   "role": "Mesul"},
     ]
 
 if "chat_logs" not in st.session_state:
